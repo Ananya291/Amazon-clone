@@ -4,8 +4,13 @@ import './Header.css';
 import { Link } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { HEADER_ELEMENTS } from './constants';
+import { useStateValue } from './StateProvider';
 
 function Header() {
+
+    const [{ basket }, dispatch] = useStateValue();
+
     return (
         <nav className='header'>
             {/*amazon left logo*/}
@@ -24,14 +29,14 @@ function Header() {
                 {/*link 1*/}
                 <Link to="/Loginpage" className='header_link'>
                     <div className='header_option'>
-                        <span className='header_optionlineone'>Hello,Ananya</span>
-                        <span className='header_optionlinetwo'>Sign In</span>
+                        <span className='header_optionlineone'>{HEADER_ELEMENTS.HELLO}</span>
+                        <span className='header_optionlinetwo'>{HEADER_ELEMENTS.SIGNIN}</span>
                     </div>
                 </Link>
                 {/*link 2*/}
                 <Link to="/Order" className='header_link'>
                     <div className='header_option'>
-                        <span className='header_optionlineone'>Returns</span>
+                        <span className='header_optionlineone'>{HEADER_ELEMENTS.RETURN}</span>
                         <span className='header_optionlinetwo'>& Orders</span>
                     </div>
                 </Link>
@@ -48,7 +53,7 @@ function Header() {
                         {/*shoping cart icon*/}
                         <AddShoppingCartIcon className='header_cart' />
                         {/*number of items in cart*/}
-                        <span className='header_optionlinetwo header_cartCount'>Cart</span>
+                        <span className='header_optionlinetwo header_cartCount'>{basket.length}</span>
                     </div>
                 </Link>
             </div>

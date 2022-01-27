@@ -9,6 +9,7 @@ import Order from './Order';
 import MainCheckout from './MainCheckout';
 import Product from './Product';
 import LoginPage from './Loginpage'
+import Product2 from './Product2';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/order" element={<Order />}/>
 
         <Route path="/product" element={<Product />}/>
+
+        <Route path="/product2" element={<Product2 />}/>
 
         <Route path="/Loginpage" element={<Main component={<LoginPage />} />} />
 

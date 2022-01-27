@@ -1,12 +1,14 @@
 import React from 'react'
 import './Product.css'
 
-function Product({ title, offer,img }) {
+function Product({ title, offer,img,seller,cost }) {
     return (
-        <div className='Product'>  
-            <p className='Product_title'>{title}</p>
-            <img className='Product_image' src={img} alt='' />
-            <div className='Product_Offer'>
+        <div className='product'>  
+            <p className='product_Title'>{title}</p>
+            <img className='product_Image' src={img} alt='' />
+            <p className='product_Seller'>{seller}</p>
+            <h3 className='product_Cost'>{cost}</h3>
+            <div className='product_Offer'>
                 <a>{offer}</a>
             </div>
             {/* <div className='Product_container2'>

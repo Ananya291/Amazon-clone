@@ -1,0 +1,38 @@
+.product2{
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+}
+
+.product2_Head{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.product2_Title{
+    font-size: 21px!important;
+    font-weight: 700;
+    height: 60px;
+}
+
+.product2_Options{
+    margin-left: 15px;
+    margin-top: 8px;
+    height: 15px;
+    color:#007185;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px!important;
+    font-weight: 500;
+} 
+
+.product2_Image{
+    cursor: pointer;
+}
