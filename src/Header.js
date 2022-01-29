@@ -53,7 +53,7 @@ function Header() {
                         {/*shoping cart icon*/}
                         <AddShoppingCartIcon className='header_cart' />
                         {/*number of items in cart*/}
-                        <span className='header_optionlinetwo header_cartCount'>{basket.length}</span>
+                        <span className='header_optionlinetwo header_cartCount'>{basket?.length}</span>
                     </div>
                 </Link>
             </div>

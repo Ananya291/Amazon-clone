@@ -67,6 +67,7 @@ function MainCheckout() {
                     options="See more"
                     image={firestick}
                     
+                    
                 />
                 {/* <Product2
                     image={echo}
