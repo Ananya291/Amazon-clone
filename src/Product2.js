@@ -10,7 +10,7 @@ function Product2({ title2, options,image }) {
         //Add item to basket..
         dispatch({
             type: 'ADD_TO_BASKET',
-            type: {
+            item: {
                 title2: title2,
                 options: options,
                 image: image

@@ -5,7 +5,6 @@ function Main({component}) {
     return (
 
         <div>
-            
             <Header/>
         {component}
         </div>
