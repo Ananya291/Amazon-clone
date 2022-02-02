@@ -3,6 +3,7 @@ export const initialState = {
     user: null,
 };
 
+//selector
 export const getBasketTotal = (basket) => {
     return basket.reduce((amount, item) => Number(item.price) + Number(amount), 0);
 }
