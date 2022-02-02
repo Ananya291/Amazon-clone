@@ -7,7 +7,7 @@ function Product({ title, offer,img,seller,cost }) {
             <p className='product_Title'>{title}</p>
             <img className='product_Image' src={img} alt='' />
             <p className='product_Seller'>{seller}</p>
-            <h3 className='product_Cost'>{cost}</h3>
+            <strong className='product_Cost'>{cost}</strong>
             <div className='product_Offer'>
                 <a>{offer}</a>
             </div>

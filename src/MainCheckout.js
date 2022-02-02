@@ -61,20 +61,26 @@ function MainCheckout() {
                 />
             </div>
 
-            <div className='home_row'>
+            <div className='home_row2'>
                 <Product2
+                    id="12356451"
                     title2="Up to 60% off | Refurbished products"
                     options="See more"
                     image={firestick}
-                    
-                    
-                />
-                {/* <Product2
-                    image={echo}
+                    price="₹3,999.00"
                 />
                 <Product2
-                     image={hp1}
-                /> */}
+                    id="721446112"
+                    // title2="Up to 60% off | Refurbished products"
+                    image={echo}
+                    price="₹3,999.00"
+                />
+                <Product2
+                    id="555263182"
+                    // title2="Up to 60% off | Refurbished products"
+                    image={hp1}
+                    price="₹3,999.00"
+                />
             </div>
         </div>
     )
