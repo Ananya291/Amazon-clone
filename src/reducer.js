@@ -3,6 +3,11 @@ export const initialState = {
     user: null,
 };
 
+export const getBasketTotal = (basket) => {
+    return basket.reduce((amount, item) => Number(item.price) + Number(amount), 0);
+}
+    
+
 function reducer(state, action) {
     console.log(action);
     switch (action.type) {
@@ -18,10 +23,10 @@ function reducer(state, action) {
 
             const index = state.basket.findIndex((basketItem) => basketItem.id === action.id);
 
-            if(index>=0){
+            if (index >= 0) {
                 //items exist in basket, remove it..
                 newBasket.splice(index, 1);
-            }else{
+            } else {
 
             }
 

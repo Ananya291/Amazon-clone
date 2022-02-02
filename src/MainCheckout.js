@@ -67,19 +67,19 @@ function MainCheckout() {
                     title2="Up to 60% off | Refurbished products"
                     options="See more"
                     image={firestick}
-                    price="₹3,999.00"
+                    price="3999"
                 />
                 <Product2
                     id="721446112"
                     // title2="Up to 60% off | Refurbished products"
                     image={echo}
-                    price="₹3,999.00"
+                    price="3999"
                 />
                 <Product2
                     id="555263182"
                     // title2="Up to 60% off | Refurbished products"
                     image={hp1}
-                    price="₹3,999.00"
+                    price="3999"
                 />
             </div>
         </div>
